@@ -1,0 +1,21 @@
+<launch>
+
+	  <!-- Load the TortoiseBot URDF model into the parameter server -->  
+	<param name="robot_description" textfile="$(find swarm_simulation)/description/model.urdf"/> 
+   <param name="robot_description_2nd" textfile="$(find swarm_simulation)/description/model_2nd.urdf"/>
+  
+	<include file="$(find gazebo_ros)/launch/empty_world.launch" >
+		<arg name="world_name" value="$(find swarm_simulation)/worlds/world_1.world"/>
+		<arg name="paused" value="false"/>
+    	<arg name="use_sim_time" value="true"/>
+    	<arg name="gui" value="true"/>
+    	<arg name="recording" value="false"/>
+    	<arg name="debug" value="false"/>
+  	</include>
+
+
+
+	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model model -x 3 -y 0 -z 0.5"/>	
+	<node name="spawn_urdf_2nd" pkg="gazebo_ros" type="spawn_model" args="-param robot_description_2nd -urdf -model model_2nd -x 2.5 -y 0 -z 0.5"/>	
+	
+</launch>

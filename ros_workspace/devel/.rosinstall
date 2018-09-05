@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/dmw/Pulpit/ROBOTKN/skid-swarm-simulation-urdf_model/ros_workspace/devel/setup.sh

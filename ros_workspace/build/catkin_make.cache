@@ -1,0 +1,2 @@
+swarm_simulation
+-DCATKIN_DEVEL_PREFIX=/home/dmw/Pulpit/ROBOTKN/skid-swarm-simulation-urdf_model/ros_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/dmw/Pulpit/ROBOTKN/skid-swarm-simulation-urdf_model/ros_workspace/install -G Unix Makefiles

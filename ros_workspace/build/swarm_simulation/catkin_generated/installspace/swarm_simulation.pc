@@ -1,0 +1,8 @@
+prefix=/home/dmw/Pulpit/ROBOTKN/skid-swarm-simulation-urdf_model/ros_workspace/install
+
+Name: swarm_simulation
+Description: Description of swarm_simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dmw/Pulpit/ROBOTKN/skid-swarm-simulation-urdf_model/ros_workspace/install/lib 
+Requires: 
